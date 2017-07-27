@@ -17,8 +17,8 @@ title: Mainak Roy Chowdhury
 email: rcmainak@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Permanent residence of Mainak Roy Chowdhury on the interweb.
-baseurl: "/rcmainak" # the subpath of your site, e.g. /blog
-url: "http://192.168.1.137" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 common_username: RCMainak
 quora_username: Mainak-R-Chowdhury
 linkedin_username: mainak-roy-chowdhury-b2582aa8
