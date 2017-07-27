@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  </head>
-  <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-    
+<head>
+  <title>{{ page.title }}</title>
+
+  <!-- load the fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+
+  <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.9/assets/font-linux.css" rel="stylesheet">
+
+  <!-- link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
+  
+  <!-- link to main js -->
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
+</head>
+
+<body>
+  {% include nav.html %}
+
+  <div class="container">
     {{ content }}
-    
-    </div><!-- /.container -->
-    <footer>
-        <ul>
-            <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-            <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-      </ul>
-    </footer>
-  </body>
+  </div><!-- /.container -->
+  
+  <div class="container">
+    {% include footer.html %}
+  </div>
+</body>
 </html>

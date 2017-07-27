@@ -1,0 +1,173 @@
+body {
+  background-color: #e2e2e2;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.42857143;
+  color: #333;
+  margin: 0px;
+}
+
+nav {
+  background: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0em 3em;
+  border-right: 0.2em #555 solid;
+}
+
+
+nav ul li:first-child {
+  padding-left: 0em;
+}
+
+nav ul li:last-child {
+  padding-right: 0em;
+  border: 0em;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #00897b;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 0.2em #ff9100 solid;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.list-style-none {
+  margin: 0em;
+  padding: 0em;
+  list-style: none;
+}
+
+.contact-info-list li {
+  width: 30%;
+  display: inline-block;
+  padding: 0.5em 0;
+}
+
+.contact-info-list li a {
+  color: #333;
+}
+
+.fa-telegram {
+  color: #333;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077B5;
+}
+
+.fa-quora:hover {
+  color: #b92b27;
+}
+
+.fa-twitter-square:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook-square:hover{
+  color: #3b5998;
+}
+
+.fa-telegram:hover {
+  color: #0088cc;
+}
+
+.active {
+  border-bottom: 0.1em #555 solid;
+}
+
+.lsit_style-none > li {
+  margin-left: -2em;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.fadeIn{
+  display: block;
+  animation: 0.8s fade_in;
+}
+
+.fadeOut{
+  animation: 0.8s fade_out;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    max-height: 100px;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  nav ul li {
+    padding: 0em 5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 640px) {
+  nav ul li {
+    padding: 0em 1em;
+  }
+
+  nav ul li a {
+    font-size: 1.4em;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 0.3em #e65100 solid;
+  }
+}
